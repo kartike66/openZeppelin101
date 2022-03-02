@@ -6,7 +6,7 @@ async function main () {
   const Box = await ethers.getContractFactory('Box');
   const box = await Box.attach(address);
   // Send a transaction to store() a new value in the Box
-  await box.store(23);
+  await box.store(42);
 
 // Call the retrieve() function of the deployed Box contract
   const value = await box.retrieve();
